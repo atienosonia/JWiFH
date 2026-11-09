@@ -1,0 +1,160 @@
+body {
+    background-color: #053827;
+    
+}
+
+
+h1{
+    color:beige;
+    text-align:right;
+    font-size:60px;
+}
+p {
+    color: beige;
+    text-align: right;
+}
+
+
+
+body {
+    background-color: #053827;
+}
+
+.job-details {
+    position: absolute;
+    width: 28%;
+    color: black;
+    text-align: left;
+}
+
+/* Timeline container */
+.timeline {
+    position: relative;
+    width: 100%;
+    padding: 40px 0;
+}
+
+/* Vertical centre line */
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: -82px;
+    width: 4px;
+    background-color: #ffa629;
+    transform: translateX(-50%);
+}
+
+/* Individual timeline entries */
+.timeline-entry {
+    position: relative;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+/* Job information */
+.job-details {
+    position: relative;
+    width: 42%;
+    color: black;
+    text-align: left;
+    padding-bottom: 30px;
+}
+
+/* Right-side jobs */
+.timeline-entry.right .job-details {
+    margin-left: 55%;
+}
+
+/* Left-side jobs */
+.timeline-entry.left .job-details {
+    margin-left: 3%;
+}
+
+/* Horizontal branches */
+.timeline-entry::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 4px;
+    width: 47%;
+    background-color: #ffa629;
+}
+
+.timeline-entry.right::after {
+    left: 50%;
+}
+
+.timeline-entry.left::after {
+    right: 50%;
+}
+
+/* Job information text */
+.job-details h3,
+.job-details h4,
+.job-details p,
+.job-details li {
+    color: black;
+    text-align: left;
+}
+
+.section-heading {
+    color: #ffa629;
+    text-align: center;
+}
+
+.section-heading {
+    color: #ffa629;
+    text-align: center;
+    background-color: #053827;
+    position: relative;
+    z-index: 1;
+    padding: 0 15px;
+}
+
+
+
+
+
+
+
+.section-divider {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+
+
+.section-divider h2 {
+    color: #ffa629;
+    text-align: center;
+    background-color: #053827;
+    padding: 0 15px;
+    z-index: 1;
+}
+
+.section-line {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 85%;
+    height: 4px;
+    background-color: #ffa629;
+}
+
+.quote-container {
+    width: 40%;
+    margin-left: auto;
+    text-align: right;
+}
+
+.quote-container blockquote {
+    color: black;
+    text-align: right;
+    margin: 0;
+    font-size: 20px;
+}
